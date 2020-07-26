@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        title Login
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")           
+        include ../partials/head-link.pug
+    body#login
+        #mainLogin
+            .imgs
+                .prin
+                    img(src="../../assets/images/logoUpdated.png")
+                .secu
+                    img(src="../../assets/images/Avatar2.png")
+            .entradas
+                .entradaUsuario
+                    input#username.in(type="text" placeholder="Correo")
+                    i.fas.fa-user.login-icono
+                .entradaUsuario
+                    input#password.in(type="password" placeholder="Contraseña")
+                    i.far.fa-eye.login-icono
+                .textForgot
+                    a(href="Forgot.pug" style="text-decoration: none;")
+                        span.forgot.text-1 Recuperar Contraseña
+            .buttons
+                button#iniciar.btnCustom(onclick="inicio_sesion()")
+                    span Iniciar
+                button.btnCustom(onclick="ver_ventana_registro()")
+                    span Registrar
+
+    //- footer scripts
+    script(src="../../public/scripts/login.js")

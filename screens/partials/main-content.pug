@@ -1,0 +1,115 @@
+//-  !-- Sidebar --
+
+nav#sidebar
+    .sidebar-header
+        img.avatarHome(src="../../assets/images/logoUpdated.png", alt="")
+        img.avatar(src="../../assets/images/Avatar2.png", alt="")
+        h4.text-white#nombreUser Nombre Persona
+    .side-menu
+        input.input(type="text", name="", placeholder="Captcha")
+        button.btnV Validar
+        ul.list-unstyled.components.nav.flex-column.btn-dark
+            li.nav-item
+                #nav_link_collapsed.nav-link.collapsed.btn_coll( href="#" data-toggle="collapse" style="cursor:pointer"
+                    data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts")   
+                        .btn_nav_item
+                            i.far.fa-file-alt                   
+                            i#i1.fas.fa-angle-right.float-right
+                            span(style="margin-left:15px") ESTADO 
+                        
+                        
+                        .collapse#collapseLayouts(style="margin-left:10px" aria-labelledby="headingOne" data-parent="#sidenavAccordion")
+                            #item(style='margin: 10px 0px 10px 0px')
+                                i.fas.fa-plus(style="margin-right:30px")
+                                label#label_file-input(for="file-input" style="cursor:pointer") Importar txt
+                                input#file-input(name="file-input" type = "file"  style="cursor:pointer")
+                                br
+                            #item(style='margin: 10px 0px 10px 0px')
+                                i.far.fa-trash-alt(style="margin-right:30px")
+                                span(onclick='comprobar()' style="margin-left:10px") Comprobar 
+                                br
+                            #item(style='margin: 10px 0px 10px 0px')
+                                i.far.fa-trash-alt(style="margin-right:30px")
+                                span(onclick="limpiar()" style="margin-left:10px") Limpiar 
+                                
+
+            li.nav-item
+                #nav_link_collapsed.nav-link.collapsed.btn_coll( href="#" data-toggle="collapse" style="cursor:pointer"
+                    data-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts")   
+                        .btn_nav_item
+                            i.far.fa-file-alt                   
+                            i#i2.fas.fa-angle-right.float-right
+                            span(style="margin-left:15px") GENERAR BIN 
+                        
+            
+                        .collapse#collapseLayouts2(style="margin-left:10px" aria-labelledby="headingOne" data-parent="#sidenavAccordion")
+                            #item(style='margin: 10px 0px 10px 0px')
+                                i.far.fa-trash-alt(style="margin-right:30px")
+                                span(onclick="GenerarBin1()" style="margin-left:10px") Generar 1 
+                                br
+                            #item(style='margin: 10px 0px 10px 0px')
+                                i.far.fa-trash-alt(style="margin-right:30px")
+                                span(style="margin-left:10px") Generar 2 
+                                br
+                            #item(style='margin: 10px 0px 10px 0px')
+                                i.far.fa-trash-alt(style="margin-right:30px")
+                                span(style="margin-left:10px") Limpiar 
+
+
+            li.nav-item
+                #nav_link_collapsed.nav-link.collapsed.btn_coll( href="#" data-toggle="collapse" style="cursor:pointer"
+                    data-target="#collapseLayouts3" aria-expanded="false" aria-controls="collapseLayouts")   
+                        .btn_nav_item
+                            i.far.fa-file-alt                   
+                            i#i3.fas.fa-angle-right.float-right
+                            span(style="margin-left:15px") CHECHEAR BIN 
+                        
+            
+                        .collapse#collapseLayouts3(style="margin-left:10px" aria-labelledby="headingOne" data-parent="#sidenavAccordion")
+                            #item(style='margin: 10px 0px 10px 0px')
+                                i.far.fa-trash-alt(style="margin-right:30px")
+                                span(style="margin-left:10px") Bin 1 
+                                br
+                            #item(style='margin: 10px 0px 10px 0px')
+                                i.far.fa-trash-alt(style="margin-right:30px")
+                                span(style="margin-left:10px") Bin 2 
+                                br
+                            #item(style='margin: 10px 0px 10px 0px')
+                                i.far.fa-trash-alt(style="margin-right:30px")
+                                span(style="margin-left:10px") Bin 3  
+                            #item(style='margin: 10px 0px 10px 0px')
+                                i.far.fa-trash-alt(style="margin-right:30px")
+                                span(style="margin-left:10px") Bin 4  
+            
+            li.nav-item
+                #nav_link_collapsed.nav-link.collapsed.btn_coll( href="#" data-toggle="collapse" style="cursor:pointer"
+                    data-target="#collapseLayouts4" aria-expanded="false" aria-controls="collapseLayouts")   
+                        .btn_nav_item
+                            i.far.fa-file-alt                   
+                            i#i4.fas.fa-angle-right.float-right
+                            span(style="margin-left:15px") CONFIGURACIÓN 
+                        
+            
+                        .collapse#collapseLayouts4(style="margin-left:10px" aria-labelledby="headingOne" data-parent="#sidenavAccordion")
+                            #item(style='margin: 10px 0px 10px 0px')
+                                i.far.fa-trash-alt(style="margin-right:30px")
+                                span(style="margin-left:10px") Perfil 
+
+
+            li.nav-item
+                #nav_link_collapsed.nav-link.collapsed.btn_coll( href="#" data-toggle="collapse" style="cursor:pointer"
+                    data-target="#" aria-expanded="false" aria-controls="collapseLayouts")   
+                        .btn_nav_item
+                            i.far.fa-file-alt                   
+                            span(style="margin-left:15px") SALIR 
+
+
+
+
+
+
+
+            
+            
+    .text-footer#text-footer
+        h5 CHECKER TIMBI 2020

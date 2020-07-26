@@ -1,0 +1,24 @@
+SISTEMA--------------
+ok - codigo organizado
+ok - arranca normal con npm start
+
+LOGIN----------------
+ok - menú sin funcionamiento lógico : retirado
+ok - espacio corto entre imagen de logo e inputs : alongado margin button img logo
+ok - no inicia sesion, arroja datos incorrectos : reparado 
+- al arrojar datos incorrectos se deshabilita las entradas
+- recupera contraseña no funciona
+- flecha atrás funciona bien
+- solo permite entrar valores de tipo correo,
+    pero no infoma el error, sólo dice datos incorrectos
+- no funciona elemento ver contraseña
+- no permite registrar usuario de correo existente,
+    o de nombre existente, 
+    lanza una venta de error y se bloquea las entradas
+
+HOME------------------
+- diseño debe ser modificado
+- muestra el nombre de usuario
+- menu debe ser modificado
+- botones sin funcionalidad
+- sale del sistema con el btn exit del menú

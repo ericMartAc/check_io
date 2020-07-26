@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Registro
+        include ../partials/head-link.pug
+    body#login
+        i#backArrow.back.fas.fa-chevron-left
+        #mainLogin
+            .imgs
+                .prin
+                    img(src="../../assets/images/logoUpdated.png")
+            .entradas
+                .entradaUsuarioBlanco
+                    input#email.inBlanco(type="email" placeholder="Correo")
+                    i.far.fa-envelope.login-icono
+                .entradaUsuarioBlanco
+                    input#username.inBlanco(type="text" placeholder="Usuario")
+                    i.fas.fa-user.login-icono
+                .entradaUsuarioBlanco
+                    input#password.inBlanco(type="password" placeholder="Contraseña")
+                    i.far.fa-eye.login-icono
+            .buttons
+                button#iniciar.btnCustom(onclick="registrarte()")
+                    span REGISTRAR
+        script(src="../../public/scripts/login.js")

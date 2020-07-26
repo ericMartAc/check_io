@@ -1,0 +1,20 @@
+- dir = ele
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Checker Timbi
+        block headStyles
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous")
+        link(rel="stylesheet" href="../../assets/style/style.css")
+        link(rel="stylesheet" href="../../assets/style/media.css")
+        link(rel="stylesheet" href="../../assets/fontawesome-free-5.13.0-web/css/all.css")
+    body#main
+        include ../partials/modals-home.pug
+        .wrapper
+            include ../partials/main-content.pug
+            .w-100.px-2
+                .menuIcon.ml-auto
+                    i#sidebarCollapse.fas.fa-align-left
+                block main-content

@@ -1,0 +1,67 @@
+extends ./layout.pug
+block headStyles
+    link(rel="stylesheet" href="../../assets/style/home.css")
+block main-content
+    .wrapp-home
+        .tittle_header
+            h4 ESTADO BIN
+        .cont-header
+            .seccion-top
+                .item-top
+                    .box-item
+                        .ttop
+                            span.left-t Datos
+                            span.right-t 000000
+                        .bbot-tittle
+                            .header-items
+                            textarea#tittle-archivo(readonly) NÚMERO DE TARJETA  MES  AÑO  CVC
+                            textarea#contenido-archivo(readonly) 
+                        
+                .item-top
+                    .box-item
+                        .ttop
+                            span.left-t Bin Consultados
+                            span.right-t 000000
+                        .bbot-tittle
+                            .header-items
+                            textarea#tittle-archivo(readonly) NÚMERO DE TARJETA  MES  AÑO  CVC  FECHA
+                            textarea#contenido-archivo2(readonly)  
+
+                .item-top
+                    .box-item
+                        .ttop
+                            span.left-t Bin No Existentes
+                            span.right-t 000000
+                        .bbot-tittle
+                            .header-items
+                            textarea#tittle-archivo(readonly) NÚMERO DE TARJETA  MES  AÑO  CVC
+                            textarea#contenido-archivo3(readonly) 
+
+        .cont#cont
+            .cont-head
+                span.left-ct ESTADO DE VERIFICACIÓN BIN
+                span.right-ct 000000
+            .cont-header-tbl
+                span.cd-3 numero
+                span.cd-1 Mes
+                span.cd-1 Año
+                span.cd-2 CVC
+                span.cd-3 Marca
+                span.cd-2 Tipo
+                span.cd-2 Nivel
+                span.cd-5 Banco
+                span.cd-1 País
+                span.cd-3 Detalle
+
+            
+                    
+            
+                    
+    
+                
+                        
+                        
+                
+    //- footer scripts
+    include ../partials/footer-scripts.pug
+    

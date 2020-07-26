@@ -1,0 +1,394 @@
+:root {
+  --iconos-login: rgb(165, 165, 165);
+  box-sizing: border-box;
+}
+.menuIcon {
+  position: absolute;
+}
+.icono-blanco::before {
+  color: white;
+}
+.key::before {
+  font-size: 3rem;
+}
+.back {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.back::before {
+  font-size: 3rem;
+  color: white;
+}
+@font-face {
+  src: url("../fonts/roboto-regular.ttf");
+  font-family: "roboto-regular";
+}
+@font-face {
+  src: url("../fonts/roboto-700.ttf");
+  font-family: "roboto-700";
+}
+@font-face {
+  src: url("../fonts/hacka.ttf");
+  font-family: "hackFont";
+}
+@font-face {
+  src: url("../fonts/CONSOLA.TTF");
+  font-family: "consola";
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: stretch;
+}
+/* SIDEBAR */
+#sidebar {
+  padding-top: 5px;
+  min-width: 250px;
+  max-width: 250px;
+  height: 100vh; /*calc(100vh - 16px);*/
+  background-color: rgb(0, 0, 0);
+  transition: 0.4s all ease;
+}
+#sidebarCollapse {
+  /* position: absolute; */
+  /* top: 15px; */
+  /* right: 30px; */
+  margin-top: 15px;
+  margin-left: 105%;
+}
+#sidebarCollapse::before {
+  color: #fff;
+  font-size: 0.5 rem;
+}
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: rgb(255, 255, 255);
+}
+.sidebar-header {
+  height: 25%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar-header .avatarHome {
+  max-height: 40%;
+  margin-bottom: 7px;
+}
+.sidebar-header .avatar {
+  max-height: 70%;
+}
+.sidebar-header #nombreUser {
+  margin-top: 1px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+.side-menu {
+  width: 100%;
+  height: max-content;
+  margin-top: 50px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.side-menu input {
+  color: gray;
+  padding-bottom: 5px;
+  width: 100%;
+  margin: 0 auto;
+}
+.side-menu button {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #3a3939;
+  border-style: none;
+}
+
+.side-menu ul li .btn_coll:hover,
+.side-menu ul li .btn_coll:hover,
+.side-menu ul li .btn_coll:hover{
+  border-left: 5px solid turquoise;
+  transition-duration:400ms;
+  background-color: darkcyan;
+}
+.side-menu ul li .btn_coll .btn_nav_item:hover{
+  background-color: teal;
+  position: relative;
+  left: -15px;
+  width: 115%;
+  padding: 3px 5px 5px 13px;
+  transition-duration: 500ms;
+}
+#text-footer{
+  position: relative;
+  top: 150px;
+}
+
+#collapseLayouts,
+#collapseLayouts2,
+#collapseLayouts3,
+#collapseLayouts4{
+  transition-duration:600ms;
+}
+#item:hover,
+#item:hover,
+#item:hover,
+#item:hover{
+  background-color: teal;
+  position: relative;
+  left: -15px;
+  width: 115%;
+  padding: 3px 5px 3px 13px;
+  transition-duration: 500ms;
+}
+
+
+
+
+
+#label_file-input {
+  position: relative;
+  height: 38px;
+  margin-bottom: -10px;
+}
+input[type="file"]#file-input {
+  position: relative;
+  top: -35px;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+}
+textarea {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+#tittle-archivo {
+  margin-left: -3%;
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+  border-style: none;
+  color: white;
+  font-family: 'consola';
+  text-align: center;
+  overflow: hidden;
+  resize: none;
+  font-size: 1.2em;
+}
+#contenido-archivo {
+  width: 100%;
+  height: 88%;
+  background-color: transparent;
+  border-style: none;
+  color: white;
+  font-family: 'consola';
+  text-align: center;
+  font-size: 14px;
+  resize: none;
+}
+#contenido-archivo2 {
+  width: 100%;
+  height: 88%;
+  background-color: transparent;
+  border-style: none;
+  font-family: 'consola';
+  text-align: center;
+  font-size: 14px;
+  resize: none;
+}
+#contenido-archivo3 {
+  width: 100%;
+  height: 88%;
+  background-color: transparent;
+  border-style: none;
+  font-family: 'consola';
+  text-align: center;
+  font-size: 14px;
+  resize: none;
+}
+#sidebar ul li #btn_exit {
+  line-height: 1.7rem;
+}
+#sidebar.active {
+  margin-left: -250px;
+}
+a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+/* FONDOS VISTAS */
+#main,
+#login {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* height: calc(100vh - 16px); */
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login {
+  background-image: url("../images/loginW.png");
+}
+#main {
+  background-image: url("../images/ggwpp2.png");
+  background-size: 300%;
+}
+/* END FONDOS VISTAS */
+#mainLogin {
+  transition: all 0.4s ease;
+  width: 60%;
+  /* margin: 0 auto; */
+  /* background-color: red; */
+}
+.imgs {
+  width: 100%;
+}
+.prin {
+  width: 35%;
+  /* background-color: blue; */
+  margin: 0 auto 20px auto;
+}
+.secu {
+  width: 35%;
+  margin: 0 auto 30px auto;
+  /* background-color: blue; */
+}
+img {
+  max-width: 100%;
+}
+.entradaUsuario {
+  /* background-color: red; */
+  align-items: center;
+  width: 100%;
+  display: flex;
+  /* border-radius: 39; */
+  border-bottom: 1px solid #d9d5dc;
+  margin-bottom: 15px;
+}
+.entradaUsuarioBlanco {
+  background-color: white;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+  display: flex;
+  /* border-radius: 39; */
+  border-bottom: 1px solid #d9d5dc;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+.in {
+  flex: 1;
+  width: 90%;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  align-self: stretch;
+  padding-right: 14px;
+  padding-left: 12px;
+  font-size: 16px;
+  font-family: "consola";
+  line-height: 22px;
+}
+.in:focus {
+  border: none;
+  outline: none;
+}
+.inBlanco {
+  flex: 1;
+  width: 90%;
+  background-color: transparent;
+  border: 0;
+  color: black;
+  align-self: stretch;
+  padding-right: 14px;
+  padding-left: 12px;
+  font-size: 16px;
+  font-family: "consola";
+  line-height: 22px;
+  outline: none;
+}
+.login-icono {
+  color: var(--iconos-login);
+  /* margin-right: 3%; */
+  width: 10%;
+}
+.textForgot {
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+}
+.forgot {
+  color: #8ef72b;
+  font-size: 10px;
+  font-family: "consola";
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.btnCustom {
+  margin-bottom: 15px;
+  border: none;
+  /* background-color: rgb(34, 34, 34); */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(54, 54, 54),
+    rgb(19, 19, 19)
+  );
+  cursor: pointer;
+  align-items: center;
+  line-height: 2rem;
+  justify-content: center;
+  box-shadow: 5px 5px 0px black;
+  border-radius: 12px;
+  width: 70%;
+  outline: none;
+}
+.btnCustom:active {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(19, 19, 19),
+    rgb(54, 54, 54)
+  );
+}
+.btnCustom span {
+  color: white;
+  font-family: "consola";
+}
+.text-footer h5 {
+  color: white;
+  text-align: center;
+}
+
+
+
+

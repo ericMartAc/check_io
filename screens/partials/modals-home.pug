@@ -1,0 +1,19 @@
+.cont-modal#cont-modal
+    .modal-add#modal-add
+        .header
+            h5 AGREGAR DATOS
+        .cont
+            span INGRESAR No. DE TARJETA
+                .numeroTarjeta
+                    input#nt_1( name='nt_1' oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" 
+                    type = "number" maxlength = "4" max=9999 min=0000 placeholder="0000" )
+                    input#nt_2(name='nt_2' oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" 
+                    type = "number" maxlength = "4" max=9999 min=0000 placeholder="0000" )
+                    input#nt_3(name='nt_3' oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" 
+                    type = "number" maxlength = "4" max=9999 min=0000 placeholder="0000" )
+                    input#nt_4(name='nt_4' oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" 
+                    type = "number" maxlength = "4" max=9999 min=0000 placeholder="0000" )
+                button.btn-success#nt-btn(onclick="enviar()") Enviar
+        .footer
+            button#btn-link(onclick="importar()") Importar
+            button#btn-close(onclick="cerrar-modal-add()") Cerrar

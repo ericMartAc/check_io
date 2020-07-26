@@ -1,0 +1,27 @@
+{
+  "name": "checker-fond-end-desktop",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "icon": "./assets/images/logoUpdated.png",
+  "scripts": {
+    "start": "electron .",
+    "ele": "electron-packager . --overwrite --icon=assets/icono.ico"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ise_col@bitbucket.org/MencoEngineeringDev/checker-fond-end-desktop.git"
+  },
+  "author": "MENCO Engineering",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/MencoEngineeringDev/checker-fond-end-desktop#readme",
+  "dependencies": {
+    "chromedriver": "^84.0.1",
+    "electron": "^9.1.0",
+    "electron-packager": "^15.0.0",
+    "electron-pug": "^2.0.0",
+    "electron-reload": "^1.5.0",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "devDependencies": {}
+}

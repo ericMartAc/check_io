@@ -1,0 +1,27 @@
+@media (min-width: 700px) {
+  .text-1 {
+    font-size: 13px;
+  }
+  #mainLogin {
+    width: 25%;
+  }
+}
+/* @media (max-width: 1200px) {
+  .text-1 {
+    font-size: 14px;
+  }
+} */
+/* SIDEBAR MEDIAS */
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1200px){
+  .header .seccion-bot .item-txt span {
+    font-size: .6rem;
+  }
+}

@@ -1,0 +1,28 @@
+ ul.list-unstyled.components
+                li.btn-secondary
+                    button#nav_link_collapsed.nav-link.collapsed(href="#" data-toggle="collapse" 
+                        data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts") ARCHIVO 
+                            i.fas.fa-angle-right#i
+                        
+            
+                    .collapse#collapseLayouts(aria-labelledby="headingOne" data-parent="#sidenavAccordion")
+                            label#label_file-input(for="file-input") + AGREGAR TXT
+                            input#file-input(name="file-input" type = "file" )
+
+                            a(href="#") CERRAR
+
+
+                li.btn-secondary
+                    button#nav_link_collapsed.nav-link.collapsed(href="#" data-toggle="collapse" 
+                        data-target="#collapseLayouts2" aria-expanded="false" aria-controls="collapseLayouts") archivo 
+                        i.fas.fa-angle-down
+                        
+            
+                    .collapse#collapseLayouts2(aria-labelledby="headingOne" data-parent="#sidenavAccordion")
+                            label#label_file-input(for="file-input") + AGREGAR TXT
+                            input#file-input(name="file-input" type = "file" )
+
+                            a(href="#") Generar Cart
+                
+                .text-footer 
+                    h5 CHECKER TIMBI 2020
